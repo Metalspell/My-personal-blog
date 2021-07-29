@@ -1,0 +1,33 @@
+.btn {
+  display        : inline-block;
+  vertical-align : top;
+  font-family    : inherit;
+  font-size      : 1.2rem;
+  line-height    : 1.1;
+  font-weight    : 500;
+  padding        : 1.1em 2.1em;
+  border-radius  : 3em;
+  text-decoration: none;
+  color          : $white;
+  border         : none;
+  background     : $secondary;
+  cursor         : pointer;
+
+  &--left {
+    background-color: $left-sidebar-btn;
+    box-shadow      : 0 7px 17px -10px rgba($left-sidebar-btn, .3);
+
+    &:hover {
+      background-color: darken($left-sidebar-btn, 5%);
+    }
+  }
+
+  &--right {
+    background-color: $right-sidebar-btn;
+    box-shadow      : 0 7px 17px -10px rgba($right-sidebar-btn, .3);
+
+    &:hover {
+      background-color: darken($right-sidebar-btn, 5%);
+    }
+  }
+}
