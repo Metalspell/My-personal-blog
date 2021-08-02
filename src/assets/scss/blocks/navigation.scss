@@ -1,0 +1,50 @@
+.navigation-list {
+  display: flex;
+
+  .navigation-item {
+    position: relative;
+
+    &:hover {
+      .navigation-link {
+        background-color: $blue;
+      }
+
+      >.subnav-list {
+        display: block;
+      }
+    }
+  }
+
+  .navigation-link {
+    display        : block;
+    font-size      : 1.1rem;
+    text-transform : uppercase;
+    color          : $white;
+    text-decoration: none;
+    padding        : 1.4rem;
+    transition     : background-color .2s linear;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+
+  .subnav {
+    position     : relative;
+    padding-right: 3.5rem;
+
+    &:after {
+      content: "";
+      display: block;
+
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: $white transparent transparent transparent;
+
+      position : absolute;
+      top      : 50%;
+      right    : 1.35rem;
+      transform: translateY(-50%);
+    }
+  }
+}
